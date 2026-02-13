@@ -18,3 +18,12 @@ btn10.addEventListener("click", () => { calculateTip(10) });
 btn15.addEventListener("click", () => { calculateTip(15) });
 btn18.addEventListener("click", () => { calculateTip(18) });
 btn20.addEventListener("click", () => { calculateTip(20) });
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('selected')); // 다른 버튼 선택 해제
+        btn.classList.add('selected'); // 클릭한 버튼 강조
+    });
+});
