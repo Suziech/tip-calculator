@@ -19,8 +19,12 @@ button {
     width: 35%;
     min-width: 100px;
     height: 100px;
+    line-height: 100px;
     margin: 10px;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
