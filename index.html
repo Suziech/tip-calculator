@@ -4,7 +4,7 @@ Add buttons for tip percentages (15%, 20%)
 Add a div to display results
 Write the calculation function in JavaScript
 Update the display when user clicks a button -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,10 +21,15 @@ Update the display when user clicks a button -->
       <div class="divider">- - - - - - - - - - - - - -</div>
 
       <input type="number" id="bill" placeholder="Enter bill amount" />
-      <div><button id="15%">15%</button> <button id="20%">20%</button></div>
+      <div class="buttonContainer">
+        <button id="10%">10%</button>
+        <button id="15%">15%</button>
+        <button id="18%">18%</button>
+        <button id="20%">20%</button>
+      </div>
 
       <div class="divider">- - - - - - - - - - - - - -</div>
-      <div id="result"></div>
+      <div id="result" class="result"></div>
     </div>
   </body>
 </html>

@@ -11,16 +11,16 @@ body {
 }
 
 input {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 20px;
 }
 
 button {
     width: 35%;
-    min-width: 70px;
-    height: 70px;
+    min-width: 100px;
+    height: 100px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .container {
@@ -34,4 +34,15 @@ button {
     padding: 30px 20px;
     border: 1px dashed #999;  /* 점선 테두리 */
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    font-weight: bold;
 }
